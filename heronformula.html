@@ -78,7 +78,7 @@ body {
     <input type="number" id = "c" name="c">
   </div>
   <div class = "refresh">
-    <button onClick="window.location.reload();">&circlearrowleft;</button>
+	<button onClick="window.location.reload();">&circlearrowleft;</button>
   </div>
   <button onclick="calculate()"  class = "button" id ="button">Calculate the area of your triangle
   </button>
@@ -97,7 +97,7 @@ function calculateArea(a, b, c) {
   }
 }
 function calculate(){
-	let a = Number(document.getElementById("a").value);
+  let a = Number(document.getElementById("a").value);
   let b = Number(document.getElementById("b").value);
   let c = Number(document.getElementById("c").value);
   let sides = [a, b, c];
