@@ -12,7 +12,7 @@ body {
   display:grid;
   
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2rem 1fr 1fr 1fr 3rem;
+  grid-template-rows: 2rem 1fr 1fr 1fr 4rem;
   gap: 1rem;
   padding:1rem;
   box-sizing: border-box;  
@@ -20,6 +20,8 @@ body {
 .header{
   grid-column-start: 1;
   grid-column-end: 4;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .content-large{
   grid-row-start: 2;
@@ -36,19 +38,22 @@ body {
 .refresh{
   grid-column-start: 1;
   grid-column-end: 2;
+  font-size: 2rem;
+  color: green;
 }
 .button{
-  grid-column-start: 2;
+  grid-column-start: 3;
   grid-column-end: 4;
   color:green;
   background-color:lightgreen;
   padding: 1rem;
   border: 0.2rem solid lightgreen;
-  font-size:15px;
+  font-size:1rem;
+  font-weight: bold;
 }
 .button:hover{
   color:lightgreen;
-  background-color:rgba(	144, 238, 144, 0.2);
+  background-color:rgba(144, 238, 144, 0.2);
 }
 .triangle{
   height: 100%;
@@ -78,7 +83,7 @@ body {
     <input type="number" id = "c" name="c">
   </div>
   <div class = "refresh">
-	<button onClick="window.location.reload();">&circlearrowleft;</button>
+	<button onClick="window.location.reload();" class = "refresh">&circlearrowleft;</button>
   </div>
   <button onclick="calculate()"  class = "button" id ="button">Calculate the area of your triangle
   </button>
