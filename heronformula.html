@@ -138,8 +138,8 @@ function drawTriangle(sides, s) {
     let a = width;
     let b = sides[1] * k;
     let c = sides[2] * k;
-    let x = (b / (b + c)) * a;
-    let y = ((2 * calculateArea(a, b, c)) / a);
+    let y = (2 * s / sides[0]) * k;
+    let x = Math.sqrt(Math.pow(b, 2) - Math.pow(y, 2));
     s = s *100;
     s = Math.round(s);
     s = s / 100;
